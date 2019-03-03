@@ -630,7 +630,7 @@ CREATE TABLE `creature_template` (
   `VerifiedBuild` smallint(5) DEFAULT '0',
   PRIMARY KEY (`entry`),
   KEY `idx_name` (`name`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2470,7 +2470,7 @@ CREATE TABLE `quest_details` (
   `EmoteDelay4` int(10) unsigned NOT NULL DEFAULT '0',
   `VerifiedBuild` smallint(5) NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2600,7 +2600,7 @@ CREATE TABLE `quest_request_items` (
   `CompletionText` text,
   `VerifiedBuild` smallint(5) NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2717,7 +2717,7 @@ CREATE TABLE `quest_template` (
   `ObjectiveText4` text,
   `VerifiedBuild` smallint(5) DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Quest System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Quest System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
